@@ -1,4 +1,5 @@
 import { contextTools } from "./context";
+import { groupTools } from "./groups";
 import { peerTools } from "./peers";
 import type { ToolDeps, ToolSpec } from "./types";
 
@@ -9,5 +10,6 @@ export function buildTools(deps: ToolDeps): ToolSpec[] {
   return [
     ...contextTools(deps),
     ...peerTools(deps),
+    ...groupTools(deps),
   ];
 }
