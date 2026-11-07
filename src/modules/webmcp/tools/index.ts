@@ -1,4 +1,5 @@
 import { contextTools } from "./context";
+import { eventTools } from "./events";
 import { groupTools } from "./groups";
 import { networkTools } from "./networks";
 import { peerTools } from "./peers";
@@ -17,5 +18,6 @@ export function buildTools(deps: ToolDeps): ToolSpec[] {
     ...policyTools(deps),
     ...setupKeyTools(deps),
     ...networkTools(deps),
+    ...eventTools(deps),
   ];
 }
