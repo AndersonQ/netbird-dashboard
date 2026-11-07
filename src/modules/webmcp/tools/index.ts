@@ -1,5 +1,6 @@
 import { contextTools } from "./context";
 import { groupTools } from "./groups";
+import { networkTools } from "./networks";
 import { peerTools } from "./peers";
 import { policyTools } from "./policies";
 import { setupKeyTools } from "./setupKeys";
@@ -15,5 +16,6 @@ export function buildTools(deps: ToolDeps): ToolSpec[] {
     ...groupTools(deps),
     ...policyTools(deps),
     ...setupKeyTools(deps),
+    ...networkTools(deps),
   ];
 }
