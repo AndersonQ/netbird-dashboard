@@ -43,6 +43,10 @@ is a walkthrough for developers, mostly backend. It covers:
 - what the backend sees, the security model, and tips for designing tools
   for an LLM
 
+🎬 **[WebMCP explained (video)](00.WebMCP_Explained.mp4)** is an explainer
+video made with NotebookLM from
+[`docs/webmcp-how-it-works.md`](docs/webmcp-how-it-works.md).
+
 The module README, [`src/modules/webmcp/README.md`](src/modules/webmcp/README.md),
 covers the code layout and how to add a tool.
 
