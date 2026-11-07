@@ -1,6 +1,7 @@
 import { contextTools } from "./context";
 import { groupTools } from "./groups";
 import { peerTools } from "./peers";
+import { policyTools } from "./policies";
 import type { ToolDeps, ToolSpec } from "./types";
 
 export type { PermissionOp, ToolDeps, ToolSpec } from "./types";
@@ -11,5 +12,6 @@ export function buildTools(deps: ToolDeps): ToolSpec[] {
     ...contextTools(deps),
     ...peerTools(deps),
     ...groupTools(deps),
+    ...policyTools(deps),
   ];
 }
