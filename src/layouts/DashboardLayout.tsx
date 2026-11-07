@@ -25,6 +25,7 @@ import GroupsProvider from "@/contexts/GroupsProvider";
 import UsersProvider from "@/contexts/UsersProvider";
 import Navigation from "@/layouts/Navigation";
 import { OnboardingProvider } from "@/modules/onboarding/OnboardingProvider";
+import WebMCPProvider from "@/modules/webmcp/WebMCPProvider";
 import Header, { headerHeight } from "./Header";
 
 export default function DashboardLayout({
@@ -42,6 +43,7 @@ export default function DashboardLayout({
                 <GroupsProvider>
                   <CountryProvider>
                     <NetBirdCloudProvider />
+                    <WebMCPProvider />
                     {!isNetBirdCloud() && <OnboardingProvider />}
                     <DashboardPageContent>{children}</DashboardPageContent>
                   </CountryProvider>
